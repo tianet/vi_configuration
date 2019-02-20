@@ -17,3 +17,6 @@ function! FormatJSON()
     :%s/, /,
 endfunction
 
+function! SudoSave()
+    :w !sudo tee %
+endfunction
